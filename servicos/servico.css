@@ -98,10 +98,10 @@ p{
 }
 
 .container-cards{
-   display: flex;
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se não ficariam tudo na mesma linha */
-    justify-content: center; /* Centraliza os cards */
-    gap: 35px; /* Adiciona espaço entre os cards */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 35px; 
     padding: 20px; 
 }
 
@@ -110,8 +110,8 @@ p{
     transition: all 0.4s ease;
     border: 1px solid #000000;
     border-radius: 10px;
-    flex-basis: 45%; /*cada card ocupe 45% da largura disponivel*/
-    max-width: 400px; /*Limita o tamanho do card*/
+    flex-basis: 45%; 
+    max-width: 400px; 
 }
 
 .card:hover {
