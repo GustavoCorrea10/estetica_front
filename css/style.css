@@ -5,6 +5,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/*HOME*/
 body {
     background-color: #fce4ec;
     display: flex;
@@ -30,7 +32,7 @@ nav {
     transition: transform 0.3s ease;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -38,11 +40,11 @@ ul {
     padding: 0 40px;
 }
 
-li {
+nav ul li {
     margin-left: 32px;
 }
 
-a {
+nav ul li a {
     display: inline-block;
     cursor: pointer;
     color: #000000;
@@ -53,12 +55,12 @@ a {
     border-radius: 4px;
 }
 
-a:hover {
+nav ul li a:hover {
     opacity: 0.8;
     transform: scale(1.1);
 }
 
-a:active {
+nav ul li a:active {
     opacity: 0.6;
 }
 
@@ -66,15 +68,7 @@ a:active {
     transform: scale(1.1);
 }
 
-
-
-
-
-
-
-
-
-main {
+#mainHome{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +98,7 @@ main {
     background-color: #e2b9ce;
     color: #000000;
     padding: 15px 30px;
+    text-decoration: none;
     border: none;
     border-radius: 8px;
     font-size: 18px;
@@ -156,14 +151,9 @@ main {
     transform: translateY(-5px);
 }
 
-h2{
+#h2Trabalhos{
     text-align: center;
 }
-
-
-
-
-
 
 footer {
     flex-direction: column;
@@ -218,9 +208,102 @@ footer ul li a:active {
     margin-top: 15px;
 }
 
-p {
+#pThalita{
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/*PAGINA DE SERVIÇO*/
+
+#mainServicos{
+    margin-top: 50px;
+    flex: 1;
+}
+
+#h1Procedimentos{
+    margin-bottom: 50px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.tituloCard{
+    margin: 10px 0 20px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.descricaoCard{
+    color: #000000;
+    text-align: center;
+    margin: 10px 10px 30px 10px;
+    font-size: 20px;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+}
+
+.card {
+    /* ESTILO ORIGINAL */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: all 0.4s ease;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    flex-basis: 45%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.imgServico {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px;
+}
+
+.detalhe {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    background-color: #b45a87;
+    color: #fdfcfc;
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.detalhe:hover {
+    opacity: 0.9;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.detalhe:active {
+    background-color: #994d73;
+    opacity: 0.7;
 }
