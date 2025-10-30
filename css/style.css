@@ -257,7 +257,6 @@ footer ul li a:active {
 }
 
 .card {
-    /* ESTILO ORIGINAL */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     transition: all 0.4s ease;
     border: 1px solid #000000;
@@ -306,4 +305,232 @@ footer ul li a:active {
 .detalhe:active {
     background-color: #994d73;
     opacity: 0.7;
+}
+
+
+
+
+
+
+
+/*DRENAGEM FACIAL*/
+
+.main-estetica {
+    max-width: 70%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-estetica h1 {
+    font-size: 32px;
+    color: #994d73;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-estetica h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #994d73;
+    border-left: 4px solid #d986d9;
+    padding-left: 10px;
+}
+
+.main-estetica p {
+    margin: 12px 0;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.main-estetica ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.main-estetica ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #020101;
+}
+
+
+
+
+
+
+
+/*DESIGN DE SOBRANCELHAS*/
+
+.maindesign {
+    max-width: 900px;
+    margin: 80px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.h1_design {
+    text-align: center;
+    color: #b84a76;
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.h1_design::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ffc6d9;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.h2_design {
+    color: #b84a76;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+.p_design {
+    font-size: 1.05em;
+    margin-bottom: 15px;
+}
+
+.lista_design {
+    margin-left: 25px;
+    list-style-type: disc;
+}
+
+
+
+
+
+
+
+
+
+/*PERGUNTAS FREQUENTES*/
+
+#pgt-page {
+    max-width: 600px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 50px 40px;
+}
+
+#pgt-page h1 {
+    text-align: center;
+    color: #b84a76;
+    font-size: 38px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#pgt-page h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ffc6d9;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+#pgt-page .pgt-item {
+    margin-bottom: 50px;
+}
+
+.pgt-item h2 {
+    color: #b84a76;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.pgt-item details {
+    margin-bottom: 15px;
+    background-color: #fff5f8;
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: 1px solid #ffc6d9;
+    transition: all 0.3s ease;
+}
+
+.pgt-item details:hover {
+    box-shadow: 0 4px 12px rgba(184, 74, 118, 0.15);
+}
+
+.pgt-item summary {
+    font-weight: 600;
+    color: #5e3b4f;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.pgt-item summary:hover {
+    color: #b84a76;
+}
+
+.pgt-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+
+
+
+
+/*MICROAGULHAMENTO*/
+
+#microagulhamento-page {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+#microagulhamento-page h1 {
+  font-size: 32px;
+  color: #994d73;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#microagulhamento-page h2 {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  color: #b84a76;
+}
+
+#microagulhamento-page p,
+#microagulhamento-page ul {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+#microagulhamento-page ul {
+  padding-left: 20px;
+}
+
+#microagulhamento-page ul li {
+  margin-bottom: 8px;
+}
+
+#microagulhamento-page b,
+#microagulhamento-page strong {
+  color: #070607;
 }
