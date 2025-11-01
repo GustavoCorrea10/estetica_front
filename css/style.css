@@ -5,6 +5,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+    color: #b84a76;
+    /* MESMA COR DO H1 DAS PERGUNTAS FREQUENTES */
+}
+
+h2 {
+    color: #994d73;
+}
+
 
 /*HOME*/
 body {
@@ -68,7 +77,7 @@ nav ul li a:active {
     transform: scale(1.1);
 }
 
-#mainHome{
+#mainHome {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +136,7 @@ nav ul li a:active {
 
 
 
-.container-fotos{
+.container-fotos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +144,7 @@ nav ul li a:active {
     padding: 40px;
 }
 
-.img_trabalho{
+.img_trabalho {
     width: 283px;
     height: 266px;
     margin: 10px;
@@ -146,12 +155,12 @@ nav ul li a:active {
 
 }
 
-.img_trabalho:hover{
+.img_trabalho:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
 
-#h2Trabalhos{
+#h2Trabalhos {
     text-align: center;
 }
 
@@ -208,7 +217,7 @@ footer ul li a:active {
     margin-top: 15px;
 }
 
-#pThalita{
+.pThalita {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 0;
@@ -224,24 +233,24 @@ footer ul li a:active {
 
 /*PAGINA DE SERVIÇO*/
 
-#mainServicos{
+#mainServicos {
     margin-top: 50px;
     flex: 1;
 }
 
-#h1Procedimentos{
+#h1Procedimentos {
     margin-bottom: 50px;
     font-size: 48px;
     text-align: center;
 }
 
-.tituloCard{
+.tituloCard {
     margin: 10px 0 20px 0;
     font-size: 25px;
     text-align: center;
 }
 
-.descricaoCard{
+.descricaoCard {
     color: #000000;
     text-align: center;
     margin: 10px 10px 30px 10px;
@@ -315,32 +324,30 @@ footer ul li a:active {
 
 /*DRENAGEM FACIAL*/
 
-.main-estetica {
+.main-detalhamento {
     max-width: 70%;
     margin: 30px auto;
     background: #ffffff;
     padding: 20px;
     border: 1px solid #000000;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.main-estetica h1 {
+.main-detalhamento h1 {
     font-size: 32px;
-    color: #994d73;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.main-estetica h2 {
+.main-detalhamento h2 {
     margin-top: 25px;
     font-size: 20px;
-    color: #994d73;
     border-left: 4px solid #d986d9;
     padding-left: 10px;
 }
 
-.main-estetica p {
+.main-detalhamento p {
     margin: 12px 0;
     line-height: 1.6;
     font-size: 18px;
@@ -348,72 +355,16 @@ footer ul li a:active {
     margin-bottom: 30px;
 }
 
-.main-estetica ul {
+.main-detalhamento ul {
     margin-top: 10px;
     padding-left: 20px;
 }
 
-.main-estetica ul li {
+.main-detalhamento ul li {
     margin-bottom: 8px;
     font-size: 1rem;
     color: #020101;
 }
-
-
-
-
-
-
-
-/*DESIGN DE SOBRANCELHAS*/
-
-.maindesign {
-    max-width: 900px;
-    margin: 80px auto;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 50px 40px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
-
-.h1_design {
-    text-align: center;
-    color: #b84a76;
-    font-size: 2.4em;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.h1_design::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: #ffc6d9;
-    margin: 10px auto 0;
-    border-radius: 5px;
-}
-
-.h2_design {
-    color: #b84a76;
-    font-size: 1.4em;
-    margin-top: 30px;
-}
-
-.p_design {
-    font-size: 1.05em;
-    margin-bottom: 15px;
-}
-
-.lista_design {
-    margin-left: 25px;
-    list-style-type: disc;
-}
-
-
-
-
-
 
 
 
@@ -492,45 +443,131 @@ footer ul li a:active {
 
 
 
-/*MICROAGULHAMENTO*/
 
-#microagulhamento-page {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 20px;
+
+
+
+/*CONTATO*/
+
+.main-contato {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f0e7;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(180, 128, 181, 0.3);
+    flex-grow: 1;
 }
 
-#microagulhamento-page h1 {
-  font-size: 32px;
-  color: #994d73;
-  margin-bottom: 15px;
-  text-align: center;
+.main-contato h2 {
+    font-size: 35px;
+    color: #5e2a60;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-#microagulhamento-page h2 {
-  font-size: 22px;
-  margin-top: 25px;
-  margin-bottom: 8px;
-  color: #b84a76;
+.main-contato h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#microagulhamento-page p,
-#microagulhamento-page ul {
-  font-size: 17px;
-  margin-bottom: 12px;
+.main-contato p {
+    font-size: 17px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #4a2c51;
 }
 
-#microagulhamento-page ul {
-  padding-left: 20px;
+/* FORMULÁRIO */
+.main-contato form {
+    margin-top: 25px;
+    background: #f7f0f5;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(75, 34, 75, 0.15);
+    text-align: center;
 }
 
-#microagulhamento-page ul li {
-  margin-bottom: 8px;
+.main-contato form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #4a2c51;
+    text-align: left;
 }
 
-#microagulhamento-page b,
-#microagulhamento-page strong {
-  color: #070607;
+.main-contato form input,
+.main-contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cdb7d9;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #4a2c51;
+    background-color: #fff5fb;
+}
+
+/* BOTÃO CENTRALIZADO */
+.main-contato form button {
+    background: #5e2a60;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.main-contato form button:hover {
+    opacity: 0.9;
+}
+
+
+.avaliacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.avaliacao legend {
+    width: 100%;
+    font-size: 1.5em;
+    color: #4a2c51;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.avaliacao input {
+    display: none;
+}
+
+.avaliacao label i {
+    font-size: 40px;
+    color: #b6b4b4;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.avaliacao label i:hover {
+    transform: translateY(-10%);
+}
+
+.avaliacao input:checked~label i {
+    color: #f1c40f;
+}
+
+.main-contato iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
 }
