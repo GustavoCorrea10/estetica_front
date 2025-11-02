@@ -165,8 +165,9 @@ nav ul li a:active {
 }
 
 footer {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     background-color: #e2b9ce;
     padding-top: 20px;
     width: 100%;
@@ -176,6 +177,7 @@ footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: fit-content;
     display: block;
 }
 
@@ -537,6 +539,7 @@ footer ul li a:active {
     margin-bottom: 20px;
     flex-wrap: wrap;
     align-items: center;
+    border: none;
 }
 
 .avaliacao legend {
@@ -570,4 +573,104 @@ footer ul li a:active {
     display: block;
     margin: 20px auto;
     border-radius: 5px;
+}
+
+
+/*CUIDADOS PÓS TRATAMENTOS*/
+
+#mainCuidados {
+    flex: 1;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px 50px;
+}
+
+#mainCuidados header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#mainCuidados header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#mainCuidados header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#mainCuidados .cuidado-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffc6d9;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+
+#mainCuidados .cuidado-item summary {
+    cursor: pointer;
+    padding: 20px 25px;
+    position: relative;
+    list-style: none;
+    background-color: #b45a87;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#mainCuidados .cuidado-item[open] summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#mainCuidados .cuidado-item summary:hover {
+    background-color: #994d73;
+}
+
+
+#mainCuidados .cuidado-item summary h2 {
+    font-size: 22px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+
+#mainCuidados .cuidado-item summary::after {
+    content: '▼';
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.5s ease-in-out;
+}
+
+#mainCuidados .cuidado-item[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+#mainCuidados .cuidado-item[open] .cuidado-conteudo {
+    max-height: 1000px;
+    border-top: 1px solid #ffc6d9;
+    transition: max-height 0.3s ease-in, padding 0.5s ease-in, border 0.5s ease-in;
+    margin: 0 20px;
+}
+
+.ul-cuidados {
+    padding-top: 10px;
+    padding-left: 20px;
+    list-style: disc;
+    margin-top: 20px;
+}
+
+.li-cuidados {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 12px;
 }
