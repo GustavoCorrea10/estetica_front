@@ -268,6 +268,7 @@ footer ul li a:active {
 }
 
 .card {
+    background-color: #eccfda;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     transition: all 0.4s ease;
     border: 1px solid #000000;
@@ -324,7 +325,7 @@ footer ul li a:active {
 
 
 
-/*DRENAGEM FACIAL*/
+/*DETALHAMENTO*/
 
 .main-detalhamento {
     max-width: 70%;
@@ -373,73 +374,103 @@ footer ul li a:active {
 
 /*PERGUNTAS FREQUENTES*/
 
-#pgt-page {
-    max-width: 600px;
-    margin: 80px auto;
+#cards-container {
+    display: flex;
+    margin: 40px;
+    gap: 30px; /* Aumentei um pouco o gap para melhor visualização */
+    padding: 0 20px;
+}
+
+.card-perguntas {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     border-radius: 20px;
-    padding: 50px 40px;
+    padding: 30px 30px; 
+    width: 650px; 
+    max-width: 95%; 
+    border: 1px solid #000000;
 }
 
-#pgt-page h1 {
+
+#h1-perguntas {
     text-align: center;
-    color: #b84a76;
     font-size: 38px;
-    margin-bottom: 30px;
-    position: relative;
+    margin-top: 30px;
 }
 
-#pgt-page h1::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: #ffc6d9;
-    margin: 10px auto 0;
-    border-radius: 5px;
-}
-
-#pgt-page .pgt-item {
-    margin-bottom: 50px;
-}
-
+/* Estilo para o título de cada seção dentro do card (Limpeza de Pele, Drenagem Facial) */
 .pgt-item h2 {
-    color: #b84a76;
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.pgt-item details {
+/* --- ESTILO DO ACORDEÃO (Aplicado ao .pergunta-item, baseado em .cuidado-item) --- */
+
+.pergunta-item {
     margin-bottom: 15px;
-    background-color: #fff5f8;
     border-radius: 10px;
-    padding: 15px 20px;
     border: 1px solid #ffc6d9;
-    transition: all 0.3s ease;
+    
 }
 
-.pgt-item details:hover {
-    box-shadow: 0 4px 12px rgba(184, 74, 118, 0.15);
-}
-
-.pgt-item summary {
-    font-weight: 600;
-    color: #5e3b4f;
+.pergunta-item summary {
     cursor: pointer;
-    font-size: 17px;
+    padding: 20px 25px;
+    position: relative;
+    list-style: none;
+    background-color: #b45a87; /* Cor do fundo da barra de título (Igual a Cuidados) */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.pgt-item summary:hover {
-    color: #b84a76;
+.pergunta-item[open] summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
-.pgt-item p {
-    margin-top: 10px;
+.pergunta-item summary:hover {
+    background-color: #994d73;
+}
+
+/* O <h2> dentro do summary (agora como título da pergunta) */
+.pergunta-item summary h2 { 
+    font-size: 18px; 
+    color: #ffffff;
+    display: inline-block;
+    margin: 0; 
+}
+
+/* Ícone de seta */
+.pergunta-item summary::after {
+    content: '▼';
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.pergunta-item[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Estilo do conteúdo da resposta (o parágrafo <p>) */
+.pergunta-item p {
+    padding: 20px 25px; /* Adiciona padding para o texto não encostar nas bordas */
+    margin: 0;
     font-size: 16px;
     color: #333333;
     line-height: 1.5;
+    background-color: #fff5f8; /* Cor de fundo suave para o conteúdo */
+    border-top: 1px solid #ffc6d9;
 }
+
 
 
 
@@ -452,6 +483,7 @@ footer ul li a:active {
 /*CONTATO*/
 
 .main-contato {
+    border: 1px solid #000000;
     max-width: 850px;
     margin: 40px auto;
     padding: 20px;
@@ -490,6 +522,7 @@ footer ul li a:active {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(75, 34, 75, 0.15);
     text-align: center;
+    border: 1px solid #000000;
 }
 
 .main-contato form label {
@@ -576,6 +609,13 @@ footer ul li a:active {
 }
 
 
+
+
+
+
+
+
+
 /*CUIDADOS PÓS TRATAMENTOS*/
 
 #mainCuidados {
@@ -585,6 +625,7 @@ footer ul li a:active {
     background-color: #ffffff;
     border-radius: 20px;
     padding: 40px 50px;
+    border: 1px solid #000000;
 }
 
 #mainCuidados header {
@@ -673,4 +714,140 @@ footer ul li a:active {
     font-size: 16px;
     color: #000000;
     margin-bottom: 12px;
+}
+
+
+
+/*SOBRE*/
+
+/*sobre.html*/
+/* === SEÇÃO PRINCIPAL - PÁGINA SOBRE === */
+#main-sobre {
+    background-color: #ffe4f1;
+    /* fundo suave rosado */
+    padding: 60px 10%;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* === TÍTULO === */
+#sobre-esteticista {
+    font-size: 2rem;
+    color: #7a3d77;
+    /* tom lilás elegante */
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+/* linha decorativa abaixo do título */
+#sobre-esteticista::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: #b45a87;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* === FIGURA E IMAGEM === */
+#figura-sobre img {
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+
+    /* Borda preta nas laterais */
+    border: 1px solid #000;
+
+
+    /* Sombra leve e transição suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease, filter 0.4s ease;
+}
+
+#figura-sobre img:hover {
+    transform: scale(1.05);
+    /* aumenta suavemente */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* sombra mais profunda */
+    border: 1px solid #000000;
+    /* muda as bordas pra rosa */
+
+    filter: brightness(1.1);
+    /* dá um leve brilho */
+}
+
+
+
+#figura-sobre figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+/* === TEXTOS === */
+#main-sobre p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+#main-sobre strong {
+    color: #b64a96;
+    /* destaca o nome Thalita */
+}
+
+
+
+/* Dicas */
+
+#container-geral {
+    border: 1px solid #000000;
+    background-color: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    color: black;
+}
+
+.h1-dicas {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#container-geral section h2 {
+    margin-top: 20px;
+}
+
+.h3-dicas {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #994d73;
+    border-left: 4px solid #d986d9;
+    padding-left: 10px;
+}
+
+.p-dicas {
+    margin-bottom: 15px;
+}
+
+.h4-dicas {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+#container-geral section article p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.li-dicas {
+    margin-left: 20px;
 }
