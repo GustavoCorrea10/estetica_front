@@ -453,7 +453,7 @@ footer ul li a:active {
     right: 25px;
     top: 50%;
     transform: translateY(-50%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .pergunta-item[open] summary::after {
@@ -483,7 +483,6 @@ footer ul li a:active {
 /*CONTATO*/
 
 .main-contato {
-    border: 1px solid #000000;
     max-width: 850px;
     margin: 40px auto;
     padding: 20px;
@@ -522,7 +521,6 @@ footer ul li a:active {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(75, 34, 75, 0.15);
     text-align: center;
-    border: 1px solid #000000;
 }
 
 .main-contato form label {
@@ -688,7 +686,7 @@ footer ul li a:active {
     right: 25px;
     top: 50%;
     transform: translateY(-50%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 #mainCuidados .cuidado-item[open] summary::after {
@@ -715,6 +713,13 @@ footer ul li a:active {
     color: #000000;
     margin-bottom: 12px;
 }
+
+
+
+
+
+
+
 
 
 
@@ -779,8 +784,6 @@ footer ul li a:active {
     /* dá um leve brilho */
 }
 
-
-
 #figura-sobre figcaption {
     font-style: italic;
     color: #555;
@@ -801,6 +804,13 @@ footer ul li a:active {
     color: #b64a96;
     /* destaca o nome Thalita */
 }
+
+
+
+
+
+
+
 
 
 
