@@ -49,9 +49,11 @@ Este projeto foi desenvolvido para a disciplina de **Desenvolvimento Front-End p
 | Nome do Integrante | Função e Contribuições |
 | :--- | :--- |
 | **Gustavo** | **Líder Técnico, Criação das páginas Home e Serviços, Arquitetura do Projeto, Implementação e Unificação de todo o CSS do site.** |
-| Raphael | Criação da página de Detalhamento sobre os tratamentos. |
-| Pedro | Criação da página de dicas. |
-| Kauan | Criação da página de Contatos. |
-| Luiz | Criação da página de Perguntas Frequentes. |
-| Alan | Criação e pesquisa sobre benefícios dos tratamentos. |
-| Gabriel | Criação da página de Cuidados Pós-Tratamentos. |
+| **Raphael** | Criação da página de Detalhamento sobre os tratamentos. |
+| **Vitor** | Criação da página de Detalhamento sobre os tratamentos. |
+| **Allan** | Criação da página de Detalhamento sobre os tratamentos. |
+| **Pedro** | Criação da página de Dicas. |
+| **Kauan** | Criação da página de Contatos. |
+| **Luiz** | Criação da página de Perguntas Frequentes. |
+| **Gabriel** | Criação da página de Cuidados Pós-Tratamentos. |
+| **Marcos** | Criação da página Sobre. |
