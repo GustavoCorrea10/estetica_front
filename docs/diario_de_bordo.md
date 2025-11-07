@@ -1,35 +1,39 @@
-# 📔 Diário de Bordo: Projeto Thalita Esteticista
+# Diário de Bordo: Projeto Thalita Esteticista
 
-## 1. Mudança de Rota e Organização Inicial
+O projeto teve início com uma proposta voltada para o desenvolvimento de um site de uma academia. No entanto, a falta de comunicação e de informações precisas por parte do proprietário acabou dificultando o andamento do trabalho. Diante dessa situação, o grupo decidiu realizar uma mudança de rota e buscar um novo tema. Foi então que surgiu a oportunidade de desenvolver um site para uma esteticista, o que se mostrou uma escolha mais viável e dentro das nossas possibilidades de execução.
 
-O projeto começou focado em um site para uma academia, mas a falta de comunicação e de informações claras por parte do proprietário nos forçou a uma **mudança de tema** importante. Rapidamente, fechamos uma parceria com uma esteticista.
+Com o novo tema definido, realizamos uma reunião no Discord para alinhar todas as etapas do projeto. Nessa conversa, definimos a estrutura do site, que contaria com **12 páginas**, e organizamos a divisão de tarefas entre os integrantes. O **Gustavo** ficou responsável por criar o repositório no GitHub, onde cada membro enviava o código da sua parte para que ele pudesse integrar tudo e manter o repositório atualizado.  
 
-Com o novo tema, realizamos uma reunião no Discord para alinhar tudo, definindo as **12 páginas** de conteúdo e dividindo as tarefas entre os membros. Em seguida, o **Gustavo** criou o repositório no GitHub. Dividimos o trabalho: cada um ficou responsável por algumas páginas HTML e enviava os códigos para ele integrar e atualizar no repositório.
+Logo nas primeiras etapas, percebemos que o maior desafio seria o aspecto visual do site. Tivemos que buscar referências, definir cores, fontes e pensar na melhor forma de organizar as informações para transmitir profissionalismo e atrair o público-alvo. Apesar de o uso de CSS não ser obrigatório para a primeira entrega, o Gustavo, por ter conhecimento prévio, adiantou o arquivo de estilo (`style.css`) das páginas **Home** e **Serviços**, o que ajudou a estabelecer uma identidade visual inicial para o projeto.
 
-Uma dificuldade que percebemos logo no começo foi a **parte visual**. Encontrar ideias para o *design* das páginas, decidir quais informações seriam mais relevantes e o que o site faria levou um tempo considerável para que pudéssemos alinhar tudo.
-
-Mesmo o CSS não sendo obrigatório para a primeira entrega, o Gustavo, por ter um conhecimento prévio, adiantou o estilo (`style.css`) das páginas **Home** e **Serviços** para já estabelecer a identidade visual.
-
-Já na parte do **CSS**, cada um ficou responsável por **estilizar a sua própria parte**. Tivemos algumas ideias diferentes, como **fazer a avaliação por estrelas** e **colocar efeitos em alguns cards**, mas no começo não sabíamos como fazer.  
-Pesquisamos bastante e conseguimos resolver algumas coisas sozinhos, porém outras exigiram uma **call no Discord** para tentarmos juntos — e assim conseguimos, mesmo sendo um pouco difícil.  
-Depois que todos entregaram suas partes, fizemos **outra call** para **avaliar o site completo**, verificar se estava tudo certo e se era necessário mudar algo. Nesse momento, **alteramos algumas cores** para deixar o visual **mais padronizado** e também ajustamos a **aparência de algumas páginas**.
+Durante o processo de estilização, cada integrante ficou responsável por aplicar o CSS na sua respectiva parte do site. Surgiram ideias como criar um sistema de avaliação por estrelas e adicionar efeitos visuais nos cards de serviços, mas no começo enfrentamos algumas dificuldades técnicas para implementar esses recursos. Após várias tentativas e pesquisas, resolvemos parte dos problemas individualmente, porém foi necessária uma **call no Discord** para trabalharmos juntos e encontrar soluções para os pontos mais complexos. Essa colaboração em tempo real foi essencial para o avanço do projeto.
 
 ---
 
-## 2. Escolha de Hospedagem e Domínio
+## Escolha de Hospedagem e Domínio
 
-Na fase de orçamento, a meta era encontrar uma solução de hospedagem que oferecesse **custo zero** e alta qualidade técnica para um site estático:
+Na etapa seguinte, realizamos uma pesquisa de mercado com o objetivo de encontrar uma opção de hospedagem gratuita e confiável para o site. Todos os integrantes do grupo participaram dessa pesquisa de forma individual, cada um analisando diferentes plataformas e comparando recursos, limitações e custos. Apesar das pequenas diferenças entre as opções encontradas, os resultados foram bastante parecidos, o que facilitou a tomada de decisão em grupo.  
 
-- **Decisão de Hospedagem:** Escolhemos o **Netlify (Plano Gratuito)**. Ele nos atendeu perfeitamente, pois oferece 100 GB/mês de largura de banda e certificado SSL gratuito, garantindo a segurança e o desempenho do site sem custo anual.  
-- **Decisão de Domínio:** O registro **.com.br** foi a melhor escolha. Além de ser o mais adequado para o público brasileiro, após a análise, ele se mostrou o mais acessível, com o **custo de renovação mais barato** (R$ 60,00/ano), o que é ótimo para a manutenção futura do site.
+Após discutirmos as alternativas, decidimos utilizar o **Netlify (plano gratuito)**, que atendeu perfeitamente às nossas necessidades, oferecendo **100 GB/mês de largura de banda**, **certificado SSL gratuito** e um desempenho estável — tudo isso sem custo anual.  
+
+Quanto ao domínio, optamos por registrar um endereço **.com.br**, por ser mais adequado ao público brasileiro e transmitir maior credibilidade. Além disso, o custo anual de renovação era o mais acessível, em torno de **R$ 60,00**, o que torna a manutenção do site viável para o cliente no futuro.
 
 ---
 
-## 3. O Desafio Final: A Validação do Código
+## Validação do Código no W3C Validator
 
-A maior dificuldade técnica aconteceu na reta final: a **validação no W3C Validator**, onde o código precisou de ajustes finos:
+Já com o site praticamente concluído, passamos para a fase de **validação do código HTML** utilizando o **W3C Validator**. Essa etapa foi fundamental para garantir que todo o código estivesse dentro dos padrões da web e livre de erros.  
 
-- **Dificuldade de Semântica:** O validador apontou que estávamos usando as tags `<section>` e `<article>` de forma redundante ou incorreta em algumas páginas. A solução foi limpar a estrutura, **eliminando a tag `<section>`** e garantindo que o título (`<h2>`) fosse movido para dentro da tag `<article>`, o que é o padrão semântico ideal.  
-- **Dificuldade de Sintaxe:** O validador identificou um aviso sobre a barra final (`/`) na tag de imagem. Para deixar o código 100% limpo, removemos essa barra de todas as tags `<img>` em todas as **12 páginas**, aderindo ao padrão mais recente do HTML5.
+Durante o processo, o validador apontou alguns problemas de **semântica**, principalmente no uso incorreto das tags `<section>` e `<article>`. Para resolver isso, reorganizamos a estrutura, eliminando as seções desnecessárias e movendo os títulos `<h2>` para dentro das tags `<article>`, o que melhorou a semântica das páginas.  
 
-Com todas as correções de layout e sintaxe, as **12 páginas HTML foram validadas com sucesso**, comprovando que o código-fonte está limpo e pronto para a entrega.
+Também foram identificados avisos sobre o uso da barra final (`/`) nas tags `<img>`. Seguindo o padrão do HTML5, removemos essas barras de todas as imagens em todas as **12 páginas**. Após as correções, o código foi novamente submetido ao validador, e todas as páginas foram aprovadas sem erros, confirmando que o site estava tecnicamente correto e pronto para ser hospedado.
+
+---
+
+## Finalização e Calls de Ajustes
+
+Na reta final, realizamos duas **calls no Discord** que foram essenciais para a conclusão do projeto. A primeira teve como objetivo **ajudar os integrantes que ainda estavam com dificuldades**, principalmente na parte de estilização e organização do código. Durante essa reunião, trocamos experiências, revisamos juntos alguns trechos de código e solucionamos dúvidas pontuais, o que fortaleceu o trabalho em equipe e garantiu que todos conseguissem finalizar suas partes.
+
+A segunda call teve um caráter mais **avaliativo e de revisão geral**. Nela, analisamos o site completo para verificar se havia algo que precisava ser modificado antes da entrega final. Fizemos ajustes de cores para deixar o visual mais padronizado, corrigimos espaçamentos e alinhamentos, revisamos o funcionamento de todos os links e garantimos que a navegação estivesse fluida. Também verificamos a responsividade e o carregamento das páginas, garantindo uma boa experiência de uso.  
+
+Após essas correções e melhorias, o grupo considerou o site finalizado. Com todas as etapas concluídas — da mudança de tema até a validação e revisão final —, o projeto da **Thalita Esteticista** ficou pronto para ser entregue, refletindo o esforço coletivo, a dedicação e o aprendizado técnico adquirido ao longo de todo o processo.
