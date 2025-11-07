@@ -1,6 +1,6 @@
-# 💄 Thalita Esteticista
+#  Thalita Esteticista
 
-## ✨ 1. Visão Geral e Objetivo
+##  1. Visão Geral e Objetivo
 
 Este projeto consiste no desenvolvimento de um **Site Estático Profissional** para a área de Estética e Bem-Estar, focado na apresentação detalhada de procedimentos faciais.
 
@@ -8,7 +8,7 @@ O objetivo principal é criar uma presença online organizada e informativa, uti
 
 ---
 
-## 🛠️ 2. Tecnologias
+##  2. Tecnologias
 
 O projeto é 100% estático.
 
@@ -17,7 +17,7 @@ O projeto é 100% estático.
 * **HTML5:** Usado para a estrutura semântica e hierarquia do conteúdo (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
 * **CSS3:** Utilizado para a estilização, consolidado em um **único arquivo** para padronização visual.
 
-## 📋 3. Páginas e Funcionalidades
+##  3. Páginas e Funcionalidades
 
 O site é composto por **12 páginas interligadas** (7 Páginas Principais + 5 de Detalhamento).
 
@@ -42,7 +42,7 @@ Páginas com detalhamento técnico e aprofundado de cada serviço (ex: benefíci
 
 ---
 
-## 🧑‍💻 4. Equipe = Conexão Dev
+##  4. Equipe = Conexão Dev
 
 Este projeto foi desenvolvido para a disciplina de **Desenvolvimento Front-End para Web** na **Universidade Cidade de São Paulo - Análise e Desenvolvimento de Sistemas**.
 
