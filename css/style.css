@@ -15,6 +15,11 @@ h2 {
 }
 
 
+
+
+
+
+
 /*HOME*/
 body {
     background-color: #fce4ec;
@@ -133,9 +138,6 @@ nav ul li a:active {
     border-radius: 10px;
 }
 
-
-
-
 .container-fotos {
     display: flex;
     align-items: center;
@@ -164,8 +166,6 @@ nav ul li a:active {
     text-align: center;
 }
 
-/* Footer principal */
-/* Footer principal */
 footer {
     display: flex;
     flex-direction: column;
@@ -175,17 +175,16 @@ footer {
     width: 100%;
 }
 
-/* Lista de links - vertical */
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* links um embaixo do outro */
+    flex-direction: column; 
 }
 
 footer ul li {
-    margin-bottom: 5px; /* espaçamento entre links */
+    margin-bottom: 5px; 
 }
 
 footer ul li a {
@@ -211,19 +210,17 @@ footer ul li a:active {
     width: 100%;
     padding: 0 40px;
     display: flex;
-    flex-direction: column; /* mantém itens empilhados verticalmente */
+    flex-direction: column;
     align-items: flex-start;
 }
 
-/* Container do menu + ícones */
 .footer-content {
     width: 100%;
-    display: flex; /* itens em linha */
-    justify-content: space-between; /* links à esquerda, ícones à direita */
-    align-items: center; /* centraliza verticalmente os ícones */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
-/* Linha divisória */
 .linha {
     width: 100%;
     border: none;
@@ -232,7 +229,6 @@ footer ul li a:active {
     margin-top: 15px;
 }
 
-/* Copyright */
 .pThalita {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -240,15 +236,14 @@ footer ul li a:active {
     font-size: 14px;
 }
 
-/* Ícones sociais - centralizados e maiores */
 .social-icons {
     display: flex;
-    gap: 20px; /* espaço entre os ícones */
+    gap: 20px; 
 }
 
 .social-icons a {
     color: rgb(0, 0, 0);
-    font-size: 35px; /* aumenta um pouco mais */
+    font-size: 35px;
     transition: transform 0.2s ease, color 0.3s;
 }
 
@@ -263,6 +258,7 @@ footer ul li a:active {
 .social-icons a.instagram:hover {
     color: #E4405F;
 }
+
 
 
 
@@ -365,6 +361,7 @@ footer ul li a:active {
 
 
 
+
 /*DETALHAMENTO*/
 
 .main-detalhamento {
@@ -412,12 +409,27 @@ footer ul li a:active {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*PERGUNTAS FREQUENTES*/
 
 #cards-container {
     display: flex;
     margin: 40px;
-    gap: 30px; /* Aumentei um pouco o gap para melhor visualização */
+    gap: 30px; 
+    
     padding: 0 20px;
 }
 
@@ -439,7 +451,6 @@ footer ul li a:active {
     margin-top: 30px;
 }
 
-/* Estilo para o título de cada seção dentro do card (Limpeza de Pele, Drenagem Facial) */
 .pgt-item h2 {
     font-size: 24px;
     margin-top: 30px;
@@ -447,8 +458,6 @@ footer ul li a:active {
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* --- ESTILO DO ACORDEÃO (Aplicado ao .pergunta-item, baseado em .cuidado-item) --- */
 
 .pergunta-item {
     margin-bottom: 15px;
@@ -462,7 +471,7 @@ footer ul li a:active {
     padding: 20px 25px;
     position: relative;
     list-style: none;
-    background-color: #b45a87; /* Cor do fundo da barra de título (Igual a Cuidados) */
+    background-color: #b45a87; 
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
@@ -476,7 +485,6 @@ footer ul li a:active {
     background-color: #994d73;
 }
 
-/* O <h2> dentro do summary (agora como título da pergunta) */
 .pergunta-item summary h2 { 
     font-size: 18px; 
     color: #ffffff;
@@ -502,14 +510,23 @@ footer ul li a:active {
 
 /* Estilo do conteúdo da resposta (o parágrafo <p>) */
 .pergunta-item p {
-    padding: 20px 25px; /* Adiciona padding para o texto não encostar nas bordas */
+    padding: 20px 25px; 
     margin: 0;
     font-size: 16px;
     color: #333333;
     line-height: 1.5;
-    background-color: #fff5f8; /* Cor de fundo suave para o conteúdo */
+    background-color: #fff5f8; 
     border-top: 1px solid #ffc6d9;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -601,7 +618,6 @@ footer ul li a:active {
     opacity: 0.9;
 }
 
-
 .avaliacao {
     display: flex;
     justify-content: center;
@@ -645,6 +661,9 @@ footer ul li a:active {
     margin: 20px auto;
     border-radius: 5px;
 }
+
+
+
 
 
 
@@ -763,30 +782,26 @@ footer ul li a:active {
 
 
 
+
+
 /*SOBRE*/
 
-/*sobre.html*/
-/* === SEÇÃO PRINCIPAL - PÁGINA SOBRE === */
 #main-sobre {
     background-color: #ffe4f1;
-    /* fundo suave rosado */
     padding: 60px 10%;
     font-family: 'Poppins', sans-serif;
     color: #333;
     text-align: center;
 }
 
-/* === TÍTULO === */
 #sobre-esteticista {
     font-size: 2rem;
     color: #7a3d77;
-    /* tom lilás elegante */
     margin-bottom: 30px;
     position: relative;
     display: inline-block;
 }
 
-/* linha decorativa abaixo do título */
 #sobre-esteticista::after {
     content: "";
     display: block;
@@ -797,13 +812,10 @@ footer ul li a:active {
     border-radius: 2px;
 }
 
-/* === FIGURA E IMAGEM === */
 #figura-sobre img {
     width: 280px;
     height: auto;
     border-radius: 15px;
-
-    /* Borda preta nas laterais */
     border: 1px solid #000;
 
 
@@ -831,7 +843,6 @@ footer ul li a:active {
     font-size: 0.95rem;
 }
 
-/* === TEXTOS === */
 #main-sobre p {
     max-width: 800px;
     margin: 0 auto 20px;
@@ -844,6 +855,9 @@ footer ul li a:active {
     color: #b64a96;
     /* destaca o nome Thalita */
 }
+
+
+
 
 
 
