@@ -164,6 +164,8 @@ nav ul li a:active {
     text-align: center;
 }
 
+/* Footer principal */
+/* Footer principal */
 footer {
     display: flex;
     flex-direction: column;
@@ -173,16 +175,17 @@ footer {
     width: 100%;
 }
 
+/* Lista de links - vertical */
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: fit-content;
-    display: block;
+    display: flex;
+    flex-direction: column; /* links um embaixo do outro */
 }
 
 footer ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* espaçamento entre links */
 }
 
 footer ul li a {
@@ -203,14 +206,24 @@ footer ul li a:active {
     opacity: 0.6;
 }
 
+/* Container do footer */
 .footer-div {
     width: 100%;
     padding: 0 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* mantém itens empilhados verticalmente */
     align-items: flex-start;
 }
 
+/* Container do menu + ícones */
+.footer-content {
+    width: 100%;
+    display: flex; /* itens em linha */
+    justify-content: space-between; /* links à esquerda, ícones à direita */
+    align-items: center; /* centraliza verticalmente os ícones */
+}
+
+/* Linha divisória */
 .linha {
     width: 100%;
     border: none;
@@ -219,12 +232,39 @@ footer ul li a:active {
     margin-top: 15px;
 }
 
+/* Copyright */
 .pThalita {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
 }
+
+/* Ícones sociais - centralizados e maiores */
+.social-icons {
+    display: flex;
+    gap: 20px; /* espaço entre os ícones */
+}
+
+.social-icons a {
+    color: rgb(0, 0, 0);
+    font-size: 35px; /* aumenta um pouco mais */
+    transition: transform 0.2s ease, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a.whatsapp:hover {
+    color: #25D366;
+}
+
+.social-icons a.instagram:hover {
+    color: #E4405F;
+}
+
+
 
 
 
