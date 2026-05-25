@@ -1,93 +1,950 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thalita Estética | Beleza e Bem-Estar</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="nav-header" id="navbar">
+      <div class="nav-inner">
+        <a href="#inicio" class="nav-logo">
+          <span class="logo-t">T</span>halita<span class="logo-dot">.</span>
+        </a>
+        <nav class="nav-links" id="nav-links">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato" class="nav-cta">Agendar</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./img/logo.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estética</title>
-</head>
-
-
-
-<body>
-    <nav>
-        <a href="./index.html"><img id="img-logo" src="./img/logo.png" alt="Logo Thalita"></a>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./servico.html">Serviços</a></li>
-            <li><a href="./dicas.html">Dicas</a></li>
-            <li><a href="./pergunta.html">Perguntas Frequentes</a></li>
-        </ul>
-    </nav>
-
-
-
-
-
-    <main id="mainHome">
-        <section id="section-conteudo">
-            <h1>Seu Espaço para Beleza e Bem-Estar</h1>
-            <p id="p-home">Bem-vindo ao espaço Thalita. Aqui, unimos a paixão pela estética com tratamentos
-                personalizados para realçar sua beleza natural e proporcionar momentos de relaxamento profundo. Descubra
-                uma experiência única de cuidado e renovação</p>
-            <a href="./servico.html">Conheça nossos serviços</a>
-        </section>
-        <img id="imagem-home" src="./img/imagem_home.png" alt="Imagem de estética">
-    </main>
-
-
-
-    <section id="galeria-trabalhos">
-        <h2 id="h2Trabalhos">Trabalhos</h2>
-        <div class="container-fotos">
-            <img class="img_trabalho" src="./img/img_trabalho1.jpeg" alt="Imagem de um trabalho sobre limpeza de pele">
-            <img class="img_trabalho" src="./img/img_trabalho3.png" alt="Imagem de um trabalho sibre limpeza de pele">
-            <img class="img_trabalho" src="./img/img_trabalho2.jpeg"
-                alt="Imagem de um trabalho sobre design de sobrancelha">
-            <img class="img_trabalho" src="./img/img_trabalho4.png"
-                alt="Imagem de um trabalho sobre design de sobrancelha">
-
-
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg-shape"></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Estética Facial Especializada</span>
+        <h1 class="hero-title">Sua melhor versão<br /><em>começa aqui.</em></h1>
+        <p class="hero-sub">
+          Tratamentos personalizados para realçar sua beleza natural, com
+          cuidado, técnica e dedicação em cada procedimento.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://wa.me/5511965700354"
+            target="_blank"
+            class="btn-primary"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Agendar pelo WhatsApp
+          </a>
+          <a href="#servicos" class="btn-secondary">Ver serviços</a>
         </div>
+        <div class="hero-chips">
+          <span class="hero-chip"
+            ><i class="fa-solid fa-certificate"></i> Profissional
+            certificada</span
+          >
+          <span class="hero-chip"
+            ><i class="fa-solid fa-location-dot"></i> Suzano – SP</span
+          >
+          <span class="hero-chip"
+            ><i class="fa-solid fa-heart-pulse"></i> Atendimento
+            personalizado</span
+          >
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <img
+            src="./img/sobreThalita.jpeg"
+            alt="Thalita, esteticista especializada"
+            class="hero-img"
+          />
+          <div class="hero-badge">
+            <i class="fa-solid fa-star"></i>
+            <span>Atendimento<br />personalizado</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-
-
-
-    <footer>
-        <nav class="footer-div">
-            <div class="footer-content">
-                <ul>
-                    <li><a href="./sobre.html">| Sobre</a></li>
-                    <li><a href="./contato.html">| Contato</a></li>
-                    <li><a href="./cuidados.html">| Cuidados Pós - Tratamento</a></li>
-                </ul>
-    
-                <div class="social-icons">
-                    <a href="https://wa.me/5511965700354" target="_blank" class="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                    <a href="https://instagram.com/thalitaaapinheiro" target="_blank" class="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <div class="sobre-grid">
+          <div class="sobre-text reveal">
+            <span class="section-eyebrow">Quem sou eu</span>
+            <h2 class="section-title">Olá, sou a <em>Thalita</em></h2>
+            <p>
+              Sou esteticista formada, apaixonada por cuidados com a pele e
+              autoestima. Trabalho ajudando clientes a se sentirem mais
+              confiantes e satisfeitas com sua aparência.
+            </p>
+            <p>
+              Meu objetivo é oferecer um atendimento personalizado, unindo
+              técnicas modernas de estética com dedicação e carinho. Acredito
+              que cada pessoa é única e merece um cuidado especial.
+            </p>
+            <div class="sobre-features">
+              <div class="feature-item">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Profissional certificada</span>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <span>Foco no bem-estar</span>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-sparkles"></i>
+                <span>Técnicas modernas</span>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-shield-check"></i>
+                <span>Ambiente esterilizado</span>
+              </div>
             </div>
-    
-            <div class="linha"></div>
-        </nav>
-    
-        <p class="pThalita">Thalita © 2025</p>
+          </div>
+          <div class="sobre-image reveal">
+            <div class="sobre-img-wrap">
+              <img
+                class="img_sobre"
+                src="./img/ImgProtocoloFacial.png"
+                alt="Thalita esteticista"
+              />
+              <div class="sobre-accent-card">
+                <i class="fa-solid fa-award"></i>
+                <p>Esteticista<br /><strong>Certificada</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos" id="servicos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">O que ofereço</span>
+          <h2 class="section-title">Procedimentos <em>especializados</em></h2>
+          <p class="section-desc">
+            Cada tratamento é adaptado às suas necessidades individuais para
+            resultados reais e duradouros.
+          </p>
+        </div>
+        <div class="servicos-grid">
+          <article class="servico-card reveal">
+            <div class="servico-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3>Limpeza de Pele</h3>
+            <p>
+              Remove impurezas, cravos e células mortas, promovendo renovação
+              celular e deixando a pele mais saudável e luminosa.
+            </p>
+            <ul class="servico-bullets">
+              <li>Ideal para todos os tipos de pele</li>
+              <li>60 a 90 minutos de procedimento</li>
+              <li>Resultados visíveis imediatos</li>
+            </ul>
+            <a
+              href="https://wa.me/5511965700354"
+              target="_blank"
+              class="servico-cta"
+              >Agendar <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-icon"><i class="fa-solid fa-hands"></i></div>
+            <h3>Drenagem Facial</h3>
+            <p>
+              Massagem suave que estimula a circulação linfática, reduz inchaço
+              e proporciona aparência mais descansada e jovial.
+            </p>
+            <ul class="servico-bullets">
+              <li>Resultados desde a 1ª sessão</li>
+              <li>Redução de inchaço e toxinas</li>
+              <li>Técnica relaxante e agradável</li>
+            </ul>
+            <a
+              href="https://wa.me/5511965700354"
+              target="_blank"
+              class="servico-cta"
+              >Agendar <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>Microagulhamento</h3>
+            <p>
+              Estimula colágeno e elastina com microagulhas, tratando rugas,
+              cicatrizes de acne, manchas e flacidez com eficácia comprovada.
+            </p>
+            <ul class="servico-bullets">
+              <li>3 a 6 sessões recomendadas</li>
+              <li>Minimamente invasivo</li>
+              <li>Pele mais firme e uniforme</li>
+            </ul>
+            <a
+              href="https://wa.me/5511965700354"
+              target="_blank"
+              class="servico-cta"
+              >Agendar <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Design de Sobrancelhas</h3>
+            <p>
+              Formato personalizado que respeita a simetria do seu rosto,
+              realçando o olhar e harmonizando toda a expressão facial.
+            </p>
+            <ul class="servico-bullets">
+              <li>20 a 40 minutos</li>
+              <li>Respeita os traços naturais</li>
+              <li>Efeito de lifting facial</li>
+            </ul>
+            <a
+              href="https://wa.me/5511965700354"
+              target="_blank"
+              class="servico-cta"
+              >Agendar <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-icon"><i class="fa-solid fa-flask"></i></div>
+            <h3>Protocolo Facial</h3>
+            <p>
+              Tratamento personalizado que combina técnicas e produtos
+              específicos para suas necessidades, com resultados visíveis e
+              duradouros.
+            </p>
+            <ul class="servico-bullets">
+              <li>100% personalizado</li>
+              <li>Trata acne, ressecamento e mais</li>
+              <li>Protocolo exclusivo para você</li>
+            </ul>
+            <a
+              href="https://wa.me/5511965700354"
+              target="_blank"
+              class="servico-cta"
+              >Agendar <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="processo">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Como funciona</span>
+          <h2 class="section-title">Simples e <em>sem complicação</em></h2>
+        </div>
+        <div class="processo-steps">
+          <div class="passo reveal">
+            <div class="passo-num">01</div>
+            <h4>Agendamento</h4>
+            <p>
+              Entre em contato pelo WhatsApp e escolha o melhor horário para
+              você.
+            </p>
+          </div>
+          <div class="passo-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="passo reveal">
+            <div class="passo-num">02</div>
+            <h4>Avaliação</h4>
+            <p>
+              Avaliamos sua pele e indicamos o tratamento mais adequado ao seu
+              perfil.
+            </p>
+          </div>
+          <div class="passo-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="passo reveal">
+            <div class="passo-num">03</div>
+            <h4>Tratamento</h4>
+            <p>
+              Procedimento realizado com técnica, cuidado e produtos de
+              qualidade.
+            </p>
+          </div>
+          <div class="passo-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="passo reveal">
+            <div class="passo-num">04</div>
+            <h4>Resultado</h4>
+            <p>
+              Acompanhamento e orientações pós-procedimento para manter os
+              resultados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUIDADOS PÓS -->
+    <section class="cuidados" id="cuidados">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Pós-tratamento</span>
+          <h2 class="section-title">Cuidados <em>essenciais</em></h2>
+          <p class="section-desc">
+            Para garantir os melhores resultados, siga as recomendações
+            específicas de cada procedimento.
+          </p>
+        </div>
+        <div class="accordion-wrap reveal">
+          <details class="accordion">
+            <summary>
+              <span
+                ><i class="fa-solid fa-droplet"></i> Pós Limpeza de Pele</span
+              >
+              <i class="fa-solid fa-chevron-down acc-icon"></i>
+            </summary>
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Evite exposição ao sol por
+                  <strong>pelo menos 48 horas</strong>
+                </li>
+                <li>Aplique protetor solar FPS 30 ou superior diariamente</li>
+                <li>
+                  Não use maquiagem ou produtos com álcool nas primeiras 24h
+                </li>
+                <li>Hidrate o rosto com produtos suaves recomendados</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion">
+            <summary>
+              <span><i class="fa-solid fa-hands"></i> Pós Drenagem Facial</span>
+              <i class="fa-solid fa-chevron-down acc-icon"></i>
+            </summary>
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Beba bastante água para ajudar o corpo a eliminar toxinas
+                </li>
+                <li>
+                  Nas 24h seguintes, evite bebidas alcoólicas e alimentos
+                  salgados
+                </li>
+                <li>
+                  Mantenha sua rotina normal de limpeza facial com produtos
+                  gentis
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion">
+            <summary>
+              <span
+                ><i class="fa-solid fa-wand-magic-sparkles"></i> Pós
+                Microagulhamento</span
+              >
+              <i class="fa-solid fa-chevron-down acc-icon"></i>
+            </summary>
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Não se exponha ao sol</strong> por 72 horas</li>
+                <li>
+                  Use protetor solar de alta proteção e reaplique a cada 2 horas
+                </li>
+                <li>Não utilize maquiagem por 24 a 48 horas</li>
+                <li>Lave o rosto apenas com sabonete neutro</li>
+                <li>
+                  Evite piscinas, saunas e exercícios intensos por 48 horas
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="accordion">
+            <summary>
+              <span
+                ><i class="fa-solid fa-eye"></i> Pós Design de
+                Sobrancelhas</span
+              >
+              <i class="fa-solid fa-chevron-down acc-icon"></i>
+            </summary>
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Não toque ou esfregue a área das sobrancelhas nas primeiras
+                  24h
+                </li>
+                <li>
+                  Evite produtos com ácidos na região por pelo menos 3 dias
+                </li>
+                <li>
+                  Se incluiu henna, evite molhar as sobrancelhas conforme
+                  orientado
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Dúvidas frequentes</span>
+          <h2 class="section-title">Perguntas <em>comuns</em></h2>
+        </div>
+
+        <!-- GRID por categoria -->
+        <div class="faq-categorias">
+          <!-- Limpeza de Pele -->
+          <div class="faq-categoria reveal">
+            <h3 class="faq-cat-title">
+              <i class="fa-solid fa-droplet"></i> Limpeza de Pele
+            </h3>
+            <div class="accordion-wrap">
+              <details class="accordion">
+                <summary>
+                  <span
+                    >Quais são os benefícios de uma boa limpeza de pele?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    A limpeza de pele remove impurezas, cravos, células mortas e
+                    excesso de oleosidade, deixando a pele mais respirável,
+                    luminosa e preparada para absorver melhor os ativos dos
+                    cuidados diários.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>O procedimento dói?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Pode haver leve desconforto na etapa de extração,
+                    especialmente em peles com cravos mais profundos. No
+                    entanto, o procedimento é bem tolerado pela maioria das
+                    pessoas.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>Quanto tempo leva o procedimento?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Em média, de 60 a 90 minutos, dependendo do tipo e das
+                    necessidades da pele. O tempo inclui a avaliação, limpeza,
+                    extração e hidratação final.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>É adequado para todos os tipos de pele?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Sim! A limpeza de pele é indicada para todos os tipos —
+                    oleosa, seca, mista ou sensível. Adaptamos o protocolo de
+                    acordo com as características de cada cliente.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>O que devo fazer após o procedimento?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Evite exposição ao sol por 48h, não use maquiagem nas
+                    primeiras 24h, aplique protetor solar diariamente e hidrate
+                    bem a pele com produtos suaves recomendados.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- Microagulhamento -->
+          <div class="faq-categoria reveal">
+            <h3 class="faq-cat-title">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Microagulhamento
+            </h3>
+            <div class="accordion-wrap">
+              <details class="accordion">
+                <summary>
+                  <span>O que é microagulhamento e como funciona?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    É uma técnica minimamente invasiva que utiliza microagulhas
+                    para criar microcanais na pele, estimulando a produção
+                    natural de colágeno e elastina. Trata rugas, manchas,
+                    cicatrizes de acne e flacidez.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>Quais são os benefícios desse procedimento?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Melhora a textura e firmeza da pele, reduz manchas e
+                    cicatrizes, diminui poros dilatados e linhas de expressão.
+                    Os resultados são progressivos e duradouros.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>O procedimento dói?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    É aplicado anestésico tópico antes do procedimento, tornando
+                    a sessão bem confortável. Pode haver leve sensação de calor
+                    ou formigamento, que passa rapidamente.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span
+                    >Quantas sessões são necessárias para ver resultados?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    De 3 a 6 sessões com intervalos de 4 a 6 semanas. Os
+                    resultados já começam a aparecer progressivamente a partir
+                    da segunda sessão.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>O que devo fazer após o procedimento?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Evite sol por 72h, use protetor solar de alta proteção, não
+                    utilize maquiagem por 24 a 48h, lave o rosto apenas com
+                    sabonete neutro e evite piscinas, saunas e exercícios
+                    intensos por 48h.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- Drenagem Facial -->
+          <div class="faq-categoria reveal">
+            <h3 class="faq-cat-title">
+              <i class="fa-solid fa-hands"></i> Drenagem Facial
+            </h3>
+            <div class="accordion-wrap">
+              <details class="accordion">
+                <summary>
+                  <span>O que é drenagem facial e como funciona?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    É uma massagem suave e rítmica que estimula o sistema
+                    linfático, favorecendo a eliminação de toxinas e líquidos
+                    retidos no rosto. Reduz inchaço e deixa a aparência mais
+                    descansada e jovial.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>Quais são os benefícios desse procedimento?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Reduz inchaço facial, melhora a circulação, diminui olheiras
+                    e bolsas, deixa a pele mais firme e proporciona uma sensação
+                    de leveza e relaxamento imediato.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>O procedimento dói?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Não, é um procedimento totalmente indolor e muito relaxante.
+                    As manobras são suaves e agradáveis, sem pressão ou
+                    desconforto.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span
+                    >Quantas sessões são necessárias para ver resultados?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Os resultados são visíveis já na primeira sessão. Para
+                    manutenção e resultados mais duradouros, recomenda-se uma
+                    sessão semanal ou quinzenal.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>Posso fazer drenagem facial antes de um evento?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Sim! É ótimo fazer na véspera ou no dia do evento. O rosto
+                    fica visivelmente desinchado, descansado e com aparência
+                    mais radiante.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- Design de Sobrancelhas -->
+          <div class="faq-categoria reveal">
+            <h3 class="faq-cat-title">
+              <i class="fa-solid fa-eye"></i> Design de Sobrancelhas
+            </h3>
+            <div class="accordion-wrap">
+              <details class="accordion">
+                <summary>
+                  <span>Como é feito o design de sobrancelhas?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Fazemos uma análise do formato do rosto e da simetria facial
+                    para mapear o desenho ideal. Em seguida, removemos os pelos
+                    fora do traçado com pinça ou linha, finalizando com
+                    acabamento preciso.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>Quais são os benefícios de um design bem feito?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Sobrancelhas bem desenhadas emolduram o olhar, harmonizam a
+                    expressão facial e criam um efeito de lifting natural,
+                    deixando o rosto mais jovem e equilibrado.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>O procedimento dói?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    A remoção dos pelos pode causar leve desconforto, mas é
+                    rápida e bem tolerada. Com as sessões regulares, a pele se
+                    adapta e a sensação diminui.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>Posso escolher o formato?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Sim! Consideramos seus desejos e preferências, mas também
+                    orientamos sobre o formato mais adequado ao seu rosto para
+                    um resultado natural e harmonioso.
+                  </p>
+                </div>
+              </details>
+              <details class="accordion">
+                <summary>
+                  <span>Quanto tempo leva o procedimento?</span
+                  ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                </summary>
+                <div class="accordion-body">
+                  <p>
+                    Entre 20 e 40 minutos, dependendo do estado atual das
+                    sobrancelhas e da técnica utilizada (pinça, linha ou henna).
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- Geral -->
+          <div class="faq-categoria faq-categoria--full reveal">
+            <h3 class="faq-cat-title">
+              <i class="fa-solid fa-circle-info"></i> Geral
+            </h3>
+            <div class="faq-geral-grid">
+              <div class="accordion-wrap">
+                <details class="accordion">
+                  <summary>
+                    <span>Preciso de avaliação antes de agendar?</span
+                    ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                  </summary>
+                  <div class="accordion-body">
+                    <p>
+                      Para a maioria dos procedimentos, a avaliação é feita no
+                      próprio dia. Para microagulhamento e protocolos faciais,
+                      recomenda-se uma consulta prévia para indicar o tratamento
+                      mais adequado.
+                    </p>
+                  </div>
+                </details>
+                <details class="accordion">
+                  <summary>
+                    <span>Quais formas de pagamento são aceitas?</span
+                    ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                  </summary>
+                  <div class="accordion-body">
+                    <p>
+                      Aceitamos dinheiro e PIX. Entre em contato pelo WhatsApp
+                      para mais informações sobre valores e pacotes.
+                    </p>
+                  </div>
+                </details>
+              </div>
+              <div class="accordion-wrap">
+                <details class="accordion">
+                  <summary>
+                    <span>O ambiente é higienizado?</span
+                    ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                  </summary>
+                  <div class="accordion-body">
+                    <p>
+                      Sim! Todo o espaço e os materiais utilizados seguem
+                      rigorosos protocolos de higiene e esterilização,
+                      garantindo segurança e bem-estar em cada atendimento.
+                    </p>
+                  </div>
+                </details>
+                <details class="accordion">
+                  <summary>
+                    <span>Como faço para agendar?</span
+                    ><i class="fa-solid fa-chevron-down acc-icon"></i>
+                  </summary>
+                  <div class="accordion-body">
+                    <p>
+                      É simples! Basta enviar uma mensagem pelo WhatsApp. Vamos
+                      te responder e encontrar o melhor horário para você.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Fale comigo</span>
+          <h2 class="section-title">Agende seu <em>horário</em></h2>
+          <p class="section-desc">
+            Entre em contato diretamente pelo WhatsApp.
+          </p>
+        </div>
+        <div class="contato-grid">
+          <div class="agendamento-cta reveal">
+            <h3 class="agendamento-cta-title">
+              Pronta para cuidar<br />da sua <em>pele?</em>
+            </h3>
+            <p class="agendamento-cta-desc">
+              Agendar é simples e rápido! Entre em contato pelo WhatsApp e
+              garanta seu horário. O atendimento é personalizado para as suas
+              necessidades.
+            </p>
+            <ol class="agendamento-steps">
+              <li>
+                <div class="step-num">1</div>
+                <span
+                  >Clique no botão abaixo e mande uma mensagem pelo
+                  WhatsApp</span
+                >
+              </li>
+              <li>
+                <div class="step-num">2</div>
+                <span
+                  >Escolha o serviço desejado e o melhor horário para você</span
+                >
+              </li>
+              <li>
+                <div class="step-num">3</div>
+                <span>Compareça à sessão e aproveite os resultados!</span>
+              </li>
+            </ol>
+            <a
+              href="https://wa.me/5511965700354?text=Olá%20Thalita!%20Gostaria%20de%20agendar%20um%20procedimento."
+              target="_blank"
+              class="btn-whatsapp-cta"
+            >
+              <i class="fa-brands fa-whatsapp"></i> Agendar agora pelo WhatsApp
+            </a>
+          </div>
+          <div class="contato-info reveal">
+            <div class="info-block">
+              <h4>Onde nos encontrar</h4>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Estr. Takashi Kobata,
+                185 - Jardim Europa, Suzano - SP
+              </p>
+              <p><i class="fa-brands fa-whatsapp"></i> (11) 96570-0354</p>
+              <p><i class="fa-brands fa-instagram"></i> @thalitaaapinheiro</p>
+            </div>
+            <div class="mapa-wrap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8604491034093!2d-46.29612012596405!3d-23.501535459394535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7bd223de1389%3A0xa471151ae817f8a6!2sEstr.%20Takashi%20Kobata%2C%20185%20-%20Jardim%20Europa%2C%20Suzano%20-%20SP%2C%2008696-040!5e0!3m2!1spt-BR!2sbr!4v1762475785330!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="355"
+                style="border: 0; border-radius: 12px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="instagram-cta">
+      <div class="container instagram-cta-inner">
+        <div class="instagram-cta-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="instagram-cta-text">
+          <h2>Nos siga no <em>Instagram</em></h2>
+          <p>
+            Dicas de skincare, novidades, resultados reais e muito mais.
+            Acompanhe e fique por dentro de tudo!
+          </p>
+        </div>
+        <a
+          href="https://instagram.com/thalitaaapinheiro"
+          target="_blank"
+          class="btn-instagram"
+        >
+          <i class="fa-brands fa-instagram"></i> @thalitaaapinheiro
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo">
+            <span class="logo-t">T</span>halita<span class="logo-dot">.</span>
+          </a>
+          <p>Beleza e bem-estar com cuidado personalizado.</p>
+          <div class="social-links">
+            <a
+              href="https://wa.me/5511965700354"
+              target="_blank"
+              aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://instagram.com/thalitaaapinheiro"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Navegação</h5>
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer-links">
+          <h5>Serviços</h5>
+          <a href="#servicos">Limpeza de Pele</a>
+          <a href="#servicos">Drenagem Facial</a>
+          <a href="#servicos">Microagulhamento</a>
+          <a href="#servicos">Design de Sobrancelhas</a>
+          <a href="#servicos">Protocolo Facial</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Thalita Estética. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
+    <!-- WHATSAPP FLUTUANTE -->
+    <a
+      href="https://wa.me/5511965700354"
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Falar no WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-</body>
-
-
-
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
