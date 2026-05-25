@@ -410,6 +410,9 @@ a {
 
 .hero-image-wrap {
   flex: 0 0 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image-frame {
@@ -558,12 +561,18 @@ a {
 .sobre-img-wrap {
   position: relative;
   display: inline-block;
-  width: 100%;
+  width: 75%;
+  margin-left: auto;
 }
-.sobre-img-wrap img {
-  height: 480px;
-  object-fit: cover;
-  object-position: top center;
+
+.sobre-image {
+  display: flex;
+  justify-content: flex-end;
+}
+.sobre-img-wrap img,
+.img_sobre {
+  width: 100%;
+  height: auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
@@ -1424,13 +1433,15 @@ a {
   }
   .sobre-image {
     order: -1;
+    justify-content: center;
   }
-  .sobre-img-wrap img {
-    height: 360px;
+  .sobre-img-wrap {
+    margin-left: 0;
   }
-
   .img_sobre {
-    width: 287px;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
   }
 
   .faq-grid {
