@@ -40,7 +40,7 @@ if (hamburger && navLinks) {
   });
 }
 
-// SCROLL REVEAL (Correção para elementos sempre aparecerem)
+// SCROLL REVEAL
 const reveals = document.querySelectorAll(".reveal");
 if (reveals.length > 0 && "IntersectionObserver" in window) {
   const revealObs = new IntersectionObserver(
@@ -98,14 +98,19 @@ const btnPrev = document.getElementById("marcas-prev");
 const btnNext = document.getElementById("marcas-next");
 
 if (marcasTrack) {
-  marcasTrack.innerHTML += marcasTrack.innerHTML;
-
   let isScrolling = false;
   let scrollInterval = setInterval(autoScrollMarcas, 1500);
 
+  function getScrollAmount() {
+    const card = marcasTrack.querySelector(".marca-card");
+    if (!card) return 204;
+    const gap = parseFloat(window.getComputedStyle(marcasTrack).gap) || 24;
+    return card.offsetWidth + gap;
+  }
+
   function autoScrollMarcas() {
     if (!isScrolling) {
-      marcasTrack.scrollBy({ left: 204, behavior: "smooth" });
+      marcasTrack.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
     }
   }
 
@@ -137,14 +142,14 @@ if (marcasTrack) {
 
   if (btnPrev) {
     btnPrev.addEventListener("click", () => {
-      marcasTrack.scrollBy({ left: -204, behavior: "smooth" });
+      marcasTrack.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
       resetInterval();
     });
   }
 
   if (btnNext) {
     btnNext.addEventListener("click", () => {
-      marcasTrack.scrollBy({ left: 204, behavior: "smooth" });
+      marcasTrack.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
       resetInterval();
     });
   }
